@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maddirala Trades</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              wood: {
+                dark: '#3E2723', // Dark Walnut
+                medium: '#5D4037',
+                light: '#D7CCC8',
+                beige: '#F5F5DC', // Light Beige
+                gold: '#D4AF37', // Golden Oak
+                green: '#2E7D32', // Forest Green
+                charcoal: '#1A1A1A', // Charcoal Black
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F5F5DC;
+        color: #1A1A1A;
+      }
+      /* Subtle wood grain texture simulation via CSS pattern */
+      .bg-wood-texture {
+        background-image: repeating-linear-gradient(45deg, rgba(62, 39, 35, 0.03) 0px, rgba(62, 39, 35, 0.03) 2px, transparent 2px, transparent 12px), repeating-linear-gradient(135deg, rgba(62, 39, 35, 0.03) 0px, rgba(62, 39, 35, 0.03) 2px, transparent 2px, transparent 12px);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
